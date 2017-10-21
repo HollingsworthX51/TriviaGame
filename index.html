@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dungeon Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link href="assets/style.css" rel="stylesheet">
+    <script src="assets/game.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">Dungeons and Dragons Knowledge</h1>
+            <p class="lead">Answer these questions three, within the time provided, to know your worth.</p>
+        </div>
+    </div>
+
+    <form id="quiz" name="quiz">
+
+
+        <p class="questions">A 12th level ranger's caster level is...?</p>
+        <input type="radio" id="mc" name="question1" value="ninth"> ninth
+        <br>
+        <input type="radio" id="mc" name="question1" value="sixth"> sixth
+        <br>
+
+        <p class="questions">What did 'TSR' initially stand for?</p>
+        <input type="radio" id="mc" name="question2" value="Tactical Studies Rules"> Tactical Studies Rules
+        <br>
+        <input type="radio" id="mc" name="question2" value="Terrible Sorceries Review"> Terrible Sorceries Review
+        <br>
+
+        <p class="questions">What wizard lends his name to an enchantment featuring an Irresistible Dance?</p>
+
+        <input type="radio" id="mc" name="question3" value="Obo"> Obo
+        <br>
+        <input type="radio" id="mc" name="question3" value="Otto"> Otto
+        <br>
+
+
+        <input id="button" type="button" value="Submit" onclick="check();">
+        <button onclick="ResetButton()">Reset Game</button>
+
+
+    </form>
+    <div id="timer">
+        <h4>Timer</h4>
+        <span id="timer"></span>
+        
+    </div>
+
+
+    <div id="after_submit">
+        <h4>Results</h4>
+        <p id="number_correct"></p>
+        <p id="message"></p>
+        <img id="picture">
+    </div>
+
+
+</body>
+
+</html>
